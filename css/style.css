@@ -1,0 +1,150 @@
+header{
+    background-color:#ccff99;
+    border-radius:100px;
+    overflow:hidden;
+    border-bottom:3px solid green;
+    font-family:sans-serif;
+    }
+
+body{
+    background-image: url('../image/bg.jpg');
+    background-size: 80%;
+}
+
+.breg{
+     background-image: url('../image/bg.jpg');
+    background-size: 110%;
+}
+
+
+
+
+header h1{
+    margin-left:5%;
+    font-size:30pt;
+    display:inline-block;
+    float:left;
+}
+
+.hreg,.hreg h1{
+    margin-top:2%;
+    float:none;
+    text-align: center;
+    margin:0;
+    
+
+}
+
+.hreg p{
+    display:inline-block;
+}
+#loginF{
+    float:right;
+    margin-right:5%;
+    display:inline-block;
+
+}
+
+#login{
+    padding:6px;
+    width:100px;
+    background-color:white;
+    border:3px solid green;
+    border-radius:20px;
+    font-size: 15px;
+}
+
+#login:hover{
+    background-color:green;
+    font-size: 15px;
+    color:white;
+}
+
+#createA{
+      padding:10px;
+    width:70%;
+    background-color:white;
+    border:3px solid green;
+    border-radius:20px;
+}
+
+#createA:hover{
+    background-color:green;
+    font-size: 15px;
+    color:white;
+}
+ 
+#logout{
+     padding:10px;
+    width:8%;
+    font-size:15px;
+    background-color:white;
+    border:3px solid green;
+    border-radius:20px;
+    float:right;
+    margin-right:5%;
+    display:inline-block;
+}
+.container{
+    width:30%;
+    margin:auto;
+    margin-top:10%;
+    float:right;
+    margin-right:10%;
+}
+
+#register{
+    padding:25px;
+    margin:auto;
+    height:350px;
+    border:3px solid green;
+    border-radius:60px;
+    text-align: center;
+    }
+
+section .tfield{
+    width:80%;
+    padding:5px;
+    border:none;
+    border-bottom:2px solid green;
+    border-left:1px solid green;
+}
+
+.aside{
+    width:20%;
+    text-align: center;
+    padding:20px;
+    height:250px;
+    margin-top:5%;
+    margin-left:2%;
+    border:2px solid green;
+    border-radius:40px;
+}
+
+a{ 
+    text-decoration: none;
+     color:green;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.lista{
+   
+    margin:0px;
+    list-style-type:none;
+}
+
+.listl{
+   text-align: center;
+   margin:0px; 
+    list-style-type:none;
+}
+
+a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+
+
+
