@@ -1,5 +1,5 @@
 header{
-    background-color:#e6ffe6;
+    background-color:#fff;
     border-radius:100px;
     overflow:hidden;
     border-bottom:3px solid green;
@@ -10,11 +10,10 @@ body{
     background-image: url('../image/bg.jpg');
     background-size: 80%;
 }
-
 .breg{
-     background-image: url('../image/bg.jpg');
-    background-size: 110%;
+    background-color:white;
 }
+
 
 
 
@@ -86,11 +85,11 @@ header h1{
     display:inline-block;
 }
 .container{
-    width:30%;
+    width:80%;
     margin:auto;
-    margin-top:10%;
+    margin-top:5%;
     float:right;
-    margin-right:10%;
+    margin-right:5%;
 }
 
 #register{
@@ -112,19 +111,20 @@ section .tfield{
 
 .aside{
     width:20%;
-    text-align: center;
+    background-color:darkslategrey;
     padding:20px;
     height:250px;
     margin-top:5%;
     margin-left:2%;
     border:2px solid green;
     border-radius:40px;
+    display:inline-block;
 }
 
 a{ 
     text-decoration: none;
-     color:green;
-    font-weight:bold;
+     color:goldenrod;
+    font-weight:bolder;
     font-size:22px;
 }
 
@@ -135,16 +135,54 @@ a{
 }
 
 .listl{
-   text-align: center;
+   letter-spacing: 3px;
    margin:0px; 
     list-style-type:none;
 }
 
 a:hover{
     text-decoration:underline;
-    color:black;
+    color:white;
 }
 
 
+#formI{
+    width:35%;
+    float:right;
+    display:inline-block;
+    margin-right:4%;
+}
+
+#quote{
+   width:50%;
+text-align: justify;
+    text-indent: 50px;
+display:inline-block;
+   letter-spacing:3px;
+    font-size:18px;
+       color:darkgoldenrod;
+}
+
+.wrapper{
+    display:inline-block;
+    overflow:hidden;
+    width:60%;
+    float:right;
+    border:2px solid green;
+    margin-top: 5%;
+    margin-right: 5%;
+    background-color:darkslategrey;
+    border-radius:40px;
+}
+
+.e1,.e2,.e3,.e4{
+    width:40%;
+    display:inline-block;
+    padding:20px;
+    text-align: justify;
+    color:goldenrod;
+    letter-spacing: 2px;
+    
+}
 
 
