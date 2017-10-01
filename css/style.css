@@ -8,10 +8,11 @@ header{
 
 body{
     background-image: url('../image/bg.jpg');
-    background-size: 80%;
+    background-size: 110%;
 }
 .breg{
-    background-color:white;
+    background-color:aliceblue;
+  
 }
 
 
@@ -77,12 +78,20 @@ header h1{
      padding:10px;
     width:8%;
     font-size:15px;
-    background-color:white;
-    border:3px solid green;
+   background-color: green;
+    border:2px solid white;
+    color:white;
     border-radius:20px;
     float:right;
     margin-right:5%;
     display:inline-block;
+}
+
+#logout:hover{
+    background-color: white;
+    border:2px solid green;
+    color:black;
+    
 }
 .container{
     width:80%;
@@ -185,4 +194,66 @@ display:inline-block;
     
 }
 
+#current{
+    color:white;
+    
+}
 
+.aexpense{
+    display:inline-block;
+    float:right;
+    padding:30px;
+    letter-spacing: 2px;
+    border:2px solid green;
+    border-radius:70px;
+    font-weight: bolder;
+    background-color:darkslategrey;
+    color:darkgoldenrod;
+    font-size:19px;
+    margin-right:20%;
+    margin-top:4%;
+}
+
+#saveae{
+    margin-left:40%;width:30%;padding:5px;border-radius: 50px;
+    font-size:18px;
+    background-color: green;
+    border:2px solid white;
+    color:white;
+}
+
+#saveae:hover{
+    background-color: white;
+    border:2px solid green;
+    color:black;
+    
+}
+
+.showex{
+    margin-top:2%;
+    width:40%;
+    float:right;
+    letter-spacing: 2px;
+    border:2px solid green;
+    border-radius:70px;
+    font-weight: bolder;
+    background-color:darkslategrey;
+    color:darkgoldenrod;
+    font-size:19px;
+    padding:5%;
+    margin-right: 8%;
+    
+}
+
+.rexpenses{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+h2{
+    color:white;
+}
+
+#addin{
+   overflow:visible;
+}

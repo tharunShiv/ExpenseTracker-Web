@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartDivider</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <header class="hreg">
+        <h1>Ex<span style="color:green">track</span></h1>
+        <p>Your All New Expense Tracker</p>
+        <form >
+            <input type="button" id="logout" value="logout" name="logout" />
+        </form>
+       </header>
+       
+       <aside class="aside">
+           <ul  class="lista"><br/><br/>
+               <li class="listl" ><a href="" >Add New Expense</a></li><br/>
+               <li class="listl"><a href="">Add New Income</a></li><br/>
+               <li class="listl"><a href="">Show Expenses</a></li><br/>
+               <li class="listl"><a href="">Start a new Trip</a></li><br/>
+               <li class="listl"><a href="" id="current">Smart Divider</a></li>
+           </ul>
+       </aside>
+       
+       <div class="sdivider">
+           <h2>The Best Feature In this Website</h2>
+           <h3>Enter the details required</h3>
+           <form>
+               <label>Enter the number of People in the trip:</label>
+               <br/>
+               <input type="text" placeholder="ex:4" id="n"/>
+               <button onclick="gen()" >Go!</button><br/>
+               <div id="addin">
+                  
+               </div>
+           </form>
+       </div>
+       
+       <script type="application/javascript">
+        function gen(){
+            var n = document.getElementById('n').value;
+            var i=0;
+            for(i=0;i<n;i++){
+                var element = document.createElement('input');
+                
+                element.type="text";
+                document.getElementById('addin').appendChild(element);
+               
+            }
+        }
+        
+           
+        /* Reference code
+        function LoopTest() {
+          var i=0;
+          var stop=5;
+           for (i=0;i<5;i++) {  
+           var v = document.createElement('input');
+            v.type="button";
+            v.value="Button " +i;
+           document.getElementById('test').appendChild(v);
+}
+} */
+    </script>
+</body>
+</html>
