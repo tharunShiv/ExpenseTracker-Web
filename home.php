@@ -22,6 +22,7 @@
         <h1>Ex<span style="color:green">track</span></h1>
         <p>Your All New Expense Tracker</p>
         <form method="get" action="home.php">
+           <label style="float:left; font-size:20px;margin-left:3%;">Welcome <span style="color:green;font-weight:bolder"><?php echo $_SESSION["username"]; ?></span></label>
             <a href="logout.php"><input type="button" id="logout" value="logout" name="logout" /></a>
         </form>
        </header>

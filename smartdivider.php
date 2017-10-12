@@ -1,3 +1,11 @@
+<?php
+  //establish connection
+	session_start();
+//the config file
+//establish connection
+	require_once('dbconfig/config.php');
+	//phpinfo();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +18,7 @@
         <h1>Ex<span style="color:green">track</span></h1>
         <p>Your All New Expense Tracker</p>
         <form >
+           <label style="float:left; font-size:20px;margin-left:3%;">Welcome <span style="color:green;font-weight:bolder"><?php echo $_SESSION["username"]; ?></span></label>
             <a href="logout.php"><input type="button" id="logout" value="logout" name="logout" /></a>
         </form>
        </header>
@@ -25,8 +34,9 @@
        </aside>
        
        <div class="sdivider">
-           <h2>The Best Feature In this Website</h2>
-           <h3>Enter the details required</h3>
+           <h2 style="color:black;">The Best Feature In this Website</h2>
+           <h3>Coming soon...</h3>
+           <!--<h3>Enter the details required</h3>
            <form>
                <label>Enter the number of People in the trip:</label>
                <br/>
@@ -63,7 +73,7 @@
                </div>
                
                <input type="button" onclick="table()" value="GO!!"/>
-        </form>
+        </form>  
         <div id="rec">
             
         </div>
@@ -78,7 +88,7 @@
             
             
         </table>
-       </div>
+       </div> -->
     
        <script type="application/javascript">
          /*         
@@ -134,6 +144,6 @@
            document.getElementById('test').appendChild(v);
 }
 } */
-    </script>
+           </script></div>
 </body>
 </html>
