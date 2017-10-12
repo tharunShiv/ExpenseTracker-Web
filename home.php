@@ -1,3 +1,14 @@
+<?php
+  //establish connection
+	session_start();
+//the config file
+//establish connection
+	require_once('dbconfig/config.php');
+	//phpinfo();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +21,19 @@
        <header class="hreg">
         <h1>Ex<span style="color:green">track</span></h1>
         <p>Your All New Expense Tracker</p>
-        <form >
-            <input type="button" id="logout" value="logout" name="logout" />
+        <form method="get" action="home.php">
+            <a href="logout.php"><input type="button" id="logout" value="logout" name="logout" /></a>
         </form>
        </header>
        
        <aside class="aside">
+         
            <ul  class="lista"><br/><br/>
-               <li class="listl"><a href="">Add New Expense</a></li><br/>
-               <li class="listl"><a href="">Add New Income</a></li><br/>
-               <li class="listl"><a href="">Show Expenses</a></li><br/>
-               <li class="listl"><a href="">Start a new Trip</a></li><br/>
-               <li class="listl"><a href="">Smart Divider</a></li>
+               <li class="listl" ><a href="addexpense.php" >Add New Expense</a></li><br/>
+               <li class="listl"><a href="addincome.php" >Add New Income</a></li><br/>
+               <li class="listl"><a href="showexpense.php">Show Expenses</a></li><br/>
+               <li class="listl"><a href="starttrip.php">Start a new Trip</a></li><br/>
+               <li class="listl"><a href="smartdivider.php" >Smart Divider</a></li>
            </ul>
        </aside>
        
@@ -65,6 +77,7 @@
             </div>   
         </div>
   
-    
+<!--php-->
+   
 </body>
 </html>

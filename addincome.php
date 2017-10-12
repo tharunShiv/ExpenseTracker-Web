@@ -12,17 +12,17 @@
         <h1>Ex<span style="color:green">track</span></h1>
         <p>Your All New Expense Tracker</p>
         <form >
-            <input type="button" id="logout" value="logout" name="logout" />
+            <a href="logout.php"><input type="button" id="logout" value="logout" name="logout" /></a>
         </form>
        </header>
        
        <aside class="aside">
            <ul  class="lista"><br/><br/>
-               <li class="listl" ><a href="addexpense.html" id="current">Add New Expense</a></li><br/>
-               <li class="listl"><a href="addincome.html">Add New Income</a></li><br/>
-               <li class="listl"><a href="showexpense.html">Show Expenses</a></li><br/>
-               <li class="listl"><a href="starttrip.html">Start a new Trip</a></li><br/>
-               <li class="listl"><a href="smartdivider.html">Smart Divider</a></li>
+               <li class="listl" ><a href="addexpense.php" >Add New Expense</a></li><br/>
+               <li class="listl"><a href="addincome.php" id="current">Add New Income</a></li><br/>
+               <li class="listl"><a href="showexpense.php">Show Expenses</a></li><br/>
+               <li class="listl"><a href="starttrip.php">Start a new Trip</a></li><br/>
+               <li class="listl"><a href="smartdivider.php" >Smart Divider</a></li>
            </ul>
        </aside>
        
@@ -33,16 +33,16 @@
                    <option value="USD">USD</option>
                    <option value="OTHER">OTHER</option>
                </select>
-               Expense : <input type="text" placeholder="Enter the expense" class="tfield" />
+               Income : <input type="text" placeholder="Enter the expense" class="tfield" />
                <br/><br/>
                Comments<br/> <textarea placeholder="Enter Comments(if any)" style="width:95%;height:50px;"></textarea>
                <br/><br/>Choose Catagory : <select>
-                   <option value="food">FOOD</option>
-                   <option value="travel">TRAVEL</option>
-                   <option value="beverages">BEVERAGES</option>
-                   <option value="medicines">MEDICINES</option>
-                   <option value="mis">MISCELLANEOUS</option>
-                   <option value="groceries">GROCERIES</option>
+                   <option value="food">SALARY</option>
+                   <option value="travel">POCKET MONEY</option>
+                   <option value="beverages">GIFT</option>
+                   <option value="medicines">AWARD</option>
+                   <option value="mis">PRIZE</option>
+                   <option value="groceries">OTHER</option>
                </select>
                <br/><br/>
                <input type="submit" value="Save" id="saveae" />
