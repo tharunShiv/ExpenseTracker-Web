@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1"/>
 </head>
 <body class="breg">
   
@@ -33,6 +33,7 @@
                <li class="listl" ><a href="addexpense.php" >Add New Expense</a></li><br/>
                <li class="listl"><a href="addincome.php" >Add New Income</a></li><br/>
                <li class="listl"><a href="showexpense.php">Show Expenses</a></li><br/>
+               <li class="listl"><a href="showincome.php">Show Incomes</a></li><br/>
                <li class="listl"><a href="starttrip.php">Start a new Trip</a></li><br/>
                <li class="listl"><a href="smartdivider.php" >Smart Divider</a></li>
            </ul>

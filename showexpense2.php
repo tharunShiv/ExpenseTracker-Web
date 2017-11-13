@@ -23,10 +23,6 @@
             border-radius:10%;
             border-spacing:13px;
         }
-        .rexpenses{
-    max-height: 450px;
-    overflow-y: scroll;
-}
        
     </style>
 </head>
@@ -56,21 +52,19 @@
            <div class="rexpenses">
               <?php
                   
-               echo '<table><tr><th>Comments</th><th>Currency</th><th>Expense</th><th>Catagory</th></tr>';
-                $totalexpense = 0;
+               echo '<table><tr><th>Comments</th><th>Expense</th><th>Catagory</th></tr>';
+               
                   $username = $_SESSION['username'];
              $q = mysqli_query($con, "SELECT * FROM expenditure where username='$username' ");
              while($row = mysqli_fetch_assoc($q)){
                 $comments = $row['comments'];
                  $expense = $row['expense'];
                  $catagory = $row['catagory'];
-                 $currency = $row['currency'];
                  if($expense==='0'){
                      
                  }else{
-                     $totalexpense = $totalexpense + $expense;
                     //echo $comments.' ~ ',$expense.' ~ '.$catagory.'<br/>'; 
-                     echo '<tr><td> '.$comments.' </td><td> '.$currency.'</td><td>'.$expense.' </td><td> '.$catagory.' </td></tr>';
+                     echo '<tr><td> '.$comments.' </td><td> '.$expense.' </td><td> '.$catagory.' </td></tr>';
                  }
                  
              }echo '</table>';
@@ -119,22 +113,20 @@
                   <li>1/05/2017 ~ Milk ~ Rs.36</li>   
                </ol> -->
            </div>
-       <br/>
-            <h2>Total Expense This Month</h2>
-            <?php
-              echo '<p style="color:white;font-size:25px;"> INR.'.$totalexpense. '</p>'
-           ?>
-             <br/>
+       
        <br/>
            
                <h2>Top 3 Most Expensive</h2>
                <ol>
-                   <li>10/07/2017 ~ College Fees ~ Rs.80000</li>
+                   <li>10/07/2017 ~ Travel ~ Rs.3600</li>
                    <li>8/07/2017 ~ Travel ~ Rs.3600</li>
                    <li>9/07/2017 ~ Tour ~ Rs.3300</li> 
                </ol>
            
-         
+         <br/>
+            <h2>Total Expense This Month</h2>
+            <p>Rs.10,342</p>
+             <br/>
              <h2>Expense compared to previous month</h2>
              <p>Rs.1023 spent more than previous month </p> 
         </div>   

@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Expenses</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css?v=1" rel="stylesheet" type="text/css"/>
 </head>
 
    <body class="breg">
@@ -30,6 +30,7 @@
                <li class="listl" ><a href="addexpense.php" >Add New Expense</a></li><br/>
                <li class="listl"><a href="addincome.php">Add New Income</a></li><br/>
                <li class="listl"><a href="showincome.php">Show Expenses</a></li><br/>
+               <li class="listl"><a href="showincome.php">Show Incomes</a></li><br/>
                <li class="listl"><a href="starttrip.php" id="current">Start a new Trip</a></li><br/>
                <li class="listl"><a href="smartdivider.php" >Smart Divider</a></li>
            </ul>

@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome!</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1"/>
 </head>
 <body>
     <header>

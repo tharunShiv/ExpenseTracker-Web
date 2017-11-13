@@ -11,8 +11,8 @@
 <head>
     <meta charset="UTF-8">
     <title>ShowExpense</title>
-    <link rel="stylesheet" href="css/style.css?v=2" type="text/css"/>
-    <style>
+    <link rel="stylesheet" href="css/style.css?v=1" type="text/css"/>
+      <style>
         th{
             color:white;
             font-weight:bold;
@@ -21,12 +21,12 @@
         table{
             border:2px dashed white;
             border-radius:10%;
-            border-spacing:13px;
+            border-spacing:16px;
         }
-        .rexpenses{
-    max-height: 450px;
-    overflow-y: scroll;
-}
+          .rexpenses{
+       max-height: 450px;
+       overflow-y: scroll;
+        }
        
     </style>
 </head>
@@ -44,36 +44,29 @@
            <ul  class="lista"><br/><br/>
                <li class="listl" ><a href="addexpense.php" >Add New Expense</a></li><br/>
                <li class="listl"><a href="addincome.php" >Add New Income</a></li><br/>
-               <li class="listl"><a href="showincome.php" id="current">Show Expenses</a></li><br/>
-               <li class="listl"><a href="showincome.php">Show Incomes</a></li><br/>
+               <li class="listl"><a href="showexpense.php" >Show Expenses</a></li><br/>
+               <li class="listl"><a href="showincome.php" id="current">Show Incomes</a></li><br/>
                <li class="listl"><a href="starttrip.php">Start a new Trip</a></li><br/>
                <li class="listl"><a href="smartdivider.php" >Smart Divider</a></li>
            </ul>
        </aside>
        
        <div class="showex">
-           <h2>Recent Expenses</h2>
+           <h2>Recent Income</h2>
            <div class="rexpenses">
               <?php
-                  
-               echo '<table><tr><th>Comments</th><th>Currency</th><th>Expense</th><th>Catagory</th></tr>';
-                $totalexpense = 0;
+                  echo '<table><tr><th>Comments</th><th>Currency</th><th>Income</th></tr>';
                   $username = $_SESSION['username'];
              $q = mysqli_query($con, "SELECT * FROM expenditure where username='$username' ");
              while($row = mysqli_fetch_assoc($q)){
                 $comments = $row['comments'];
-                 $expense = $row['expense'];
+                 $income = $row['income'];
                  $catagory = $row['catagory'];
                  $currency = $row['currency'];
-                 if($expense==='0'){
-                     
-                 }else{
-                     $totalexpense = $totalexpense + $expense;
-                    //echo $comments.' ~ ',$expense.' ~ '.$catagory.'<br/>'; 
-                     echo '<tr><td> '.$comments.' </td><td> '.$currency.'</td><td>'.$expense.' </td><td> '.$catagory.' </td></tr>';
-                 }
-                 
-             }echo '</table>';
+                 if($income!== '0'){
+          echo '<tr><td> '.$comments.' </td><td> '.$currency.' </td><td> '.$income.' </td></tr>';
+                 } }
+               echo '</table>';
                ?>
               
               
@@ -119,24 +112,10 @@
                   <li>1/05/2017 ~ Milk ~ Rs.36</li>   
                </ol> -->
            </div>
-       <br/>
-            <h2>Total Expense This Month</h2>
-            <?php
-              echo '<p style="color:white;font-size:25px;"> INR.'.$totalexpense. '</p>'
-           ?>
-             <br/>
+       
        <br/>
            
-               <h2>Top 3 Most Expensive</h2>
-               <ol>
-                   <li>10/07/2017 ~ College Fees ~ Rs.80000</li>
-                   <li>8/07/2017 ~ Travel ~ Rs.3600</li>
-                   <li>9/07/2017 ~ Tour ~ Rs.3300</li> 
-               </ol>
-           
-         
-             <h2>Expense compared to previous month</h2>
-             <p>Rs.1023 spent more than previous month </p> 
+              
         </div>   
 </body>
 </html>

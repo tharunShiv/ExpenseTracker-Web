@@ -128,7 +128,7 @@ section .tfield{
     width:20%;
     background-color:darkslategrey;
     padding:20px;
-    height:250px;
+    height:350px;
     margin-top:5%;
     margin-left:2%;
     border:2px solid green;
@@ -254,7 +254,7 @@ display:inline-block;
 
 .showex{
     margin-top:2%;
-    width:40%;
+    width:50%;
     float:right;
     letter-spacing: 2px;
     border:2px solid green;
